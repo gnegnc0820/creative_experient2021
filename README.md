@@ -10,19 +10,19 @@ webテキストのクラスタリングを行った．
 
 # description
 1. webテキストのコーパスをMeCabを用いて品詞を絞って形態素解析
-    1. wakati-hinshi.py
+    1. wakati/wakati-hinshi.py
 2. コーパスごとに出現した単語をFastTextを用いて分散表現に変換
 3. トピックごとに頻出した単語やそのベクトルのプロットを確認
-    1. get_docWords.py
-    1. make_freq_map.py
+    1. data_test/get_docWords.py
+    1. data_test/make_freq_map.py
 4. 単語ベクトルの総和をその文書のベクトルとして，オブジェクトを保存
     1. save_vectorDatas.py
 5. 上記のオブジェクトをK-Means法とAntTree法に与えて結果を比較
-    1. sample.csv
-    1. textlist.csv
-    1. genrelist.csv
+    1. datas/sample.csv
+    1. datas/textlist.csv
+    1. datas/genrelist.csv
     1. AntTree/AntTree_Script.py
-    1. k-means.py
+    1. KMeans/k-means.py
  
  
 ただし，以下のとおりである．
